@@ -64,14 +64,18 @@ Not: Node.js 22 kullanırken, modern JavaScript özelliklerinin tümü desteklen
 
 Bu uygulamayı MCP sunucusu olarak yapılandırmak için `.cursor/mcp.json` dosyasını aşağıdaki gibi düzenleyebilirsiniz:
 
+## MCP.JSON
+
+```json
 {
-"mcpServers": {
-"market-fiyat-mcp": {
-"command": "node",
-"args": ["TAMYOL\\market-fiyat-mcp\\dist\\index.js"]
+  "mcpServers": {
+    "market-fiyat-mcp": {
+      "command": "node",
+      "args": ["TAMYOL\\\\market-fiyat-mcp\\\\dist\\\\index.js"]
+    }
+  }
 }
-}
-}
+```
 
 ## Yapılandırma Ayarları
 
