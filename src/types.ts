@@ -27,6 +27,8 @@ export interface SearchResponse {
 // Ürün ve fiyat bilgileri için türler
 export interface Product {
   id: string;
+  title: string;
+  brand: string;
   name: string;
   description?: string;
   imageUrl?: string;
@@ -36,13 +38,14 @@ export interface Product {
 }
 
 export interface ProductDepotInfo {
-  id: string;
-  marketAdi: string;
-  marketLogo?: string;
+  depotId: string;
+  depotName: string;
   price: number;
-  currency: string;
-  lastUpdated: string;
-  inStock?: boolean;
+  marketAdi: string;
+  percentage: number;
+  longitude: number;
+  latitude: number;
+  indexTime: string;
 }
 
 // Fiyat karşılaştırması için türler
