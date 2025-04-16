@@ -5,11 +5,9 @@ import {
   SearchByIdentityRequest, 
   SearchRequest,
   Product,
-  ProductDepotInfo,
   ProductComparisonResult
 } from './types.js';
 
-// .env dosyasından yapılandırmayı yükle
 dotenv.config();
 
 const API_BASE_URL = process.env.API_BASE_URL || 'https://api.marketfiyati.org.tr/api/v2';
