@@ -85,5 +85,3 @@ Uygulama, aşağıdaki yapılandırma ayarlarını `.env` dosyasından okur:
 - `LOCATION_LATITUDE`: Konum enlem değeri
 - `LOCATION_LONGITUDE`: Konum boylam değeri
 - `DEPOTS`: Sorgulanacak market kodları listesi (virgülle ayrılmış)
-
-Örnek `.env` dosyası:
