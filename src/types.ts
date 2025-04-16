@@ -46,6 +46,7 @@ export interface ProductDepotInfo {
   longitude: number;
   latitude: number;
   indexTime: string;
+  currency: string;
 }
 
 // Fiyat karşılaştırması için türler
