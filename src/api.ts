@@ -13,7 +13,6 @@ import {
 dotenv.config();
 
 const API_BASE_URL = process.env.API_BASE_URL || 'https://api.marketfiyati.org.tr/api/v2';
-// const API_KEY = process.env.API_KEY; // Eğer gerekirse
 const LOCATION_LATITUDE = process.env.LOCATION_LATITUDE || "50.075539";
 const LOCATION_LONGITUDE = process.env.LOCATION_LONGITUDE || "50";
 
@@ -28,12 +27,10 @@ const DEFAULT_DEPOTS = [
 
 const DEPOTS = process.env.DEPOTS ? process.env.DEPOTS.split(',') : DEFAULT_DEPOTS;
 
-// Axios örneğini yapılandır
 const apiClient = axios.create({
   baseURL: API_BASE_URL,
   headers: {
     'Content-Type': 'application/json',
-    // Authorization: API_KEY ? `Bearer ${API_KEY}` : undefined, // Eğer gerekirse
   }
 });
 
